@@ -18,12 +18,25 @@ def crea_estudiantes(count_estudiantes):
 		count = count + 1
 	return list_students
 
-
+    
 def ordena_edades(list_students):
+    
 	print ("metodo vacio")
 
 def separa_generos(list_students):
-	print ("metodo vacio")
+    list_male = []
+    list_female=[]
+    
+    for student in list_students:
+        
+        	if student.gender==m:
+            list_male.append(student())
+         return list_male
+    
+        else:
+            
+            list_female.append(student())
+         return list_female
 
 def main():
 	
@@ -40,9 +53,12 @@ def main():
 
 		if options == "2":
 			print("ordena edades")
+            
 
 		if options == "3":
 			print("separa generos")
+            fm=input("M es para masculino, f es para femenino")
+            list_stud=separa_generos(fm)
 
 if __name__ == "__main__":
 	main()
